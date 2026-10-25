@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BX Designer Portfolio — MONGRI</title>
+  <meta name="description" content="브랜드의 문제를 발견하고 시각적 경험으로 해결하는 BX 디자인 포트폴리오입니다." />
+  <meta property="og:title" content="BX Designer Portfolio — MONGRI" />
+  <meta property="og:description" content="MONGRI 브랜드 경험 디자인 프로젝트를 담은 포트폴리오입니다." />
+  <meta property="og:image" content="images/thumbnail.png" />
+  <style>
+    :root{
+      --bg:#fffaf8;
+      --ink:#332725;
+      --muted:#786a66;
+      --pink:#f6cecd;
+      --line:#eadbd7;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, "Noto Sans KR", sans-serif;
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.65;
+    }
+    a{color:inherit}
+    .wrap{width:min(1120px, calc(100% - 40px)); margin:auto}
+    header{
+      position:sticky; top:0; z-index:5;
+      background:rgba(255,250,248,.92);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid var(--line);
+    }
+    nav{
+      height:72px; display:flex; align-items:center; justify-content:space-between;
+    }
+    .logo{font-weight:800; letter-spacing:.04em}
+    .navlinks{display:flex; gap:20px; font-size:14px}
+    .navlinks a{text-decoration:none; color:var(--muted)}
+    .hero{
+      min-height:72vh;
+      display:grid; grid-template-columns:1.05fr .95fr; align-items:center; gap:56px;
+      padding:84px 0 64px;
+    }
+    .eyebrow{font-size:13px; font-weight:700; letter-spacing:.12em; color:#a06f67}
+    h1{font-size:clamp(44px,7vw,84px); line-height:1; margin:16px 0 24px}
+    .hero p{font-size:18px; color:var(--muted); max-width:620px}
+    .btn{
+      display:inline-block; margin-top:26px; padding:14px 20px;
+      background:var(--ink); color:white; border-radius:999px; text-decoration:none;
+      font-weight:700; font-size:14px;
+    }
+    .hero-card{
+      background:var(--pink); border-radius:28px; padding:26px;
+      box-shadow:0 18px 50px rgba(70,40,34,.08);
+    }
+    .hero-card img{display:block; width:100%; border-radius:18px}
+    section{padding:88px 0; border-top:1px solid var(--line)}
+    .section-title{font-size:14px; font-weight:800; letter-spacing:.1em; color:#a06f67}
+    h2{font-size:clamp(30px,4vw,48px); margin:10px 0 26px}
+    .lead{max-width:760px; color:var(--muted)}
+    .grid3{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:34px}
+    .box{background:var(--card); border:1px solid var(--line); border-radius:20px; padding:24px}
+    .box b{display:block; margin-bottom:8px}
+    .project{
+      display:grid; grid-template-columns:1.05fr .95fr; gap:42px; align-items:start; margin-top:38px;
+    }
+    .project img{width:100%; border-radius:22px; border:1px solid var(--line); background:white}
+    .tag{display:inline-block; padding:7px 10px; border-radius:999px; background:#f5e3df; font-size:12px; margin:0 6px 6px 0}
+    .note{padding:18px 20px; border-left:4px solid var(--pink); background:#fff; margin-top:20px}
+    footer{padding:52px 0 70px; color:var(--muted); font-size:14px}
+    @media(max-width:760px){
+      .navlinks{display:none}
+      .hero,.project{grid-template-columns:1fr}
+      .hero{padding-top:56px}
+      .grid3{grid-template-columns:1fr}
+      h1{font-size:48px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="logo">BX DESIGN PORTFOLIO</div>
+      <div class="navlinks">
+        <a href="#about">ABOUT</a>
+        <a href="#project">PROJECT</a>
+        <a href="#process">PROCESS</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero" style="border-top:0">
+      <div>
+        <div class="eyebrow">BRAND EXPERIENCE DESIGN</div>
+        <h1>문제를 발견하고<br>브랜드 경험으로<br>연결합니다.</h1>
+        <p>리서치와 기획을 바탕으로 브랜드의 방향을 정리하고, 시각 디자인과 디지털 화면까지 연결하는 과정을 공부하고 있습니다.</p>
+        <a class="btn" href="#project">프로젝트 보기</a>
+      </div>
+      <div class="hero-card">
+        <img src="images/mongri-landing.png" alt="유아교육 디자인 템플릿 브랜드 MONGRI 랜딩페이지 시안" />
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title">ABOUT</div>
+      <h2>BX Designer in Progress</h2>
+      <p class="lead">브랜드 리서치, 포지셔닝, 아이덴티티, 사용자 흐름과 랜딩페이지까지 하나의 이야기로 연결하는 디자인 과정을 학습하고 있습니다. 완성된 결과뿐 아니라 문제를 정의하고 개선 방향을 도출한 과정을 중요하게 생각합니다.</p>
+      <div class="grid3">
+        <div class="box"><b>Research</b>경쟁사와 사용자 관점에서 문제를 발견하고 핵심 인사이트를 정리합니다.</div>
+        <div class="box"><b>Brand</b>포지셔닝과 톤앤매너를 기반으로 일관된 브랜드 경험을 설계합니다.</div>
+        <div class="box"><b>Digital</b>랜딩페이지 구조와 사용자 흐름을 분석하고 화면으로 구현합니다.</div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="section-title">SELECTED PROJECT</div>
+      <h2>MONGRI</h2>
+      <p class="lead">어린이집·유치원 교사를 위한 디자인 템플릿 브랜드. 여러 교실 자료를 쉽고 빠르게 수정하면서도 하나의 감성적인 스타일로 사용할 수 있도록 브랜드 경험을 설계했습니다.</p>
+
+      <div class="project">
+        <div>
+          <img src="images/mongri-landing.png" alt="MONGRI 데스크톱 랜딩페이지 디자인" />
+        </div>
+        <div>
+          <span class="tag">BX Strategy</span><span class="tag">Brand Identity</span><span class="tag">Landing Page</span>
+          <h3>Problem</h3>
+          <p>유아교육용 디자인 자료는 많지만 출처마다 스타일이 달라 여러 자료를 함께 사용할 때 교실 전체의 분위기를 통일하기 어렵고, 실제 수정 편의성도 부족할 수 있습니다.</p>
+          <h3>Direction</h3>
+          <p>친근한 캐릭터, 파스텔 컬러, 명확한 정보 영역을 일관되게 적용해 ‘쉽게 수정하면서도 함께 쓰면 하나의 브랜드처럼 보이는’ 템플릿 경험을 목표로 했습니다.</p>
+          <div class="note"><b>UX 개선 가설</b><br>Hero 아래에 추천 템플릿 영역을 추가하면 사용자가 서비스와 상품을 더 빠르게 이해하고 탐색 행동으로 자연스럽게 이어질 것이다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process">
+      <div class="section-title">PROCESS</div>
+      <h2>Research → Strategy → Design</h2>
+      <div class="grid3">
+        <div class="box"><b>01. 문제 정의</b>교사의 디자인 시간 부족과 자료 간 스타일 불일치를 핵심 문제로 설정했습니다.</div>
+        <div class="box"><b>02. 포지셔닝</b>유아교육 특화와 편집 편의성을 함께 갖춘 감성 템플릿 브랜드를 지향했습니다.</div>
+        <div class="box"><b>03. UX 개선</b>랜딩에서 실제 템플릿을 미리 확인할 수 있도록 추천 영역 추가 방향을 도출했습니다.</div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">Portfolio draft for bootcamp submission · 2026</div>
+</footer>
+</body>
+</html>
